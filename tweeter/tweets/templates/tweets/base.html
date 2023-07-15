@@ -1,0 +1,17 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% tailwind_css %}
+    {%if title%}
+    <title>Tweets - {{title}}</title>
+    {%else%}
+    <title>Tweets</title>
+    {%endif%}
+  </head>
+  <body class="bg-slate-500 w-screen h-screen p-3">
+    {% block content %} {%endblock%}
+  </body>
+</html>

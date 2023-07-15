@@ -1,0 +1,5 @@
+{% extends "tweets/base.html" %} {%block content%}
+<h1>Tweets home</h1>
+{%for post in posts%}
+<h1>{{post.title}}</h1>
+{%endfor%} {%endblock content%}
